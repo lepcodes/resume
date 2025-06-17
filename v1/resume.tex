@@ -1,0 +1,229 @@
+%------------------------------------------
+% Resume for entry level Software Engineering roles
+% Author : Abhishek Jha
+% Github : https://github.com/abhijhacodes/latex-resume
+% Website: https://abhijha.in
+%------------------------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+% --------------- PACKAGES -----------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+%% Font Definitions
+\usepackage[sfdefault]{universalis}
+\usepackage[T1]{fontenc}
+% \usepackage{avant}
+% \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+% \usepackage[T1]{fontenc}
+
+% \input{glyphtounicode}
+
+
+% ---------- RESUME FORMAT ADJUSTMENTS -------------
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% \pdfglyphtounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingNoItalics}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-----------------RESUME STARTS HERE----------------------
+% The resume has Education, Experience, Projects, Achievements, Technical Skills, Coding Profiles sections
+% You can keep which all you want and in which order, comment the ones you don't need
+% In ordering your sections, keep the ones first which are your best selling points
+
+\begin{document}
+
+\begin{center}
+    \textbf{\huge Luis Enrique Preciado Muñiz} \\ \vspace{8pt}
+    \faMapMarker\enspace \textbf{Guadalajara, México} $|$
+    \href{luispre99@gmail.com}{\textcolor{BlueViolet}{\faEnvelopeO\enspace \textbf{luispre99@gmail.com}}} $|$  
+    \href{https://www.linkedin.com/in/luispreciado/}{\textcolor{BlueViolet}{\faLinkedin\enspace \textbf{LinkedIn}}} $|$
+    \href{https://github.com/lepcodes}{\textcolor{BlueViolet}{\faGithub\enspace \textbf{Github}}} $|$
+    \small {\faMobile\enspace \textbf{+52 3317933872}} $|$
+\end{center}
+
+\vspace{-12pt}
+%------------PROFILE------------
+\rule{\textwidth}{0.1pt}
+
+\vspace{2pt}
+I'm a passionate and motivated individual with a strong interest in programming, automation, and robotics. Nearing the completion of my Robotics Engineering degree, I am seeking a graduate position to further enhance my knowledge and make meaningful contributions to the industry. With over a year of experience as an intern in the automotive industry, I am committed to continuous learning and professional growth. My effective communication skills and active listening enable me to engage with my colleagues' ideas, and my ability to work in a team allows me to contribute effectively to problem-solving and achieving shared goals.
+
+%-----------EDUCATION-----------
+% Write only your two highest formal educational qualifications
+\section{\Large{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Guadalajara}{Guadalajara, México}
+      {Master's Degree in Robotics and AI -- \textbf{CGPA: 9.13}}{January 2020 -- June 2024}
+    \resumeSubheading
+      {University of Guadalajara}{Guadalajara, México}
+      {Robotics Engineering -- \textbf{CGPA: 9.13}}{January 2020 -- June 2024}
+    \resumeSubheading
+      {CETI (Technical and Industrial Teaching Center)}{Guadalajara, México}
+      {Automatic Control Technologist -- \textbf{Percentage: 88\%}}{July 2017 -- April 2019}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{\Large{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheadingNoItalics
+      {Software Engineer Intern}{August 2023 -- July 2024}
+      {\href{https://bosch.com.mx}{\textcolor{BlueViolet}{\textbf{\large{Robert Bosch México}}}}}{Guadalajara, México (Hybrid)}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a Python and Rasa framework-based Chatbot to facilitate new developer induction and provide troubleshooting assistance, complete with a local SQL database for response management, a ChatGPT-based model API for enhanced query handling, and Github for version control.}
+        \resumeItem{Automating report generation for fault-mapping between customer defined fault application and ECU's  real monitors using Python scripts, leveraging Pandas, Anaconda, and fuzzy logic libraries, to ensure accurate tracking of monitor-fault mappings and to guarantee software quality deliverables.}
+        \resumeItem{Developed scripts to cross-reference client requirements with ECU header files, identifying potential inconsistencies and streamlining the verification process.}
+      \resumeItemListEnd
+      {\textbf{Key Metrics:} Improved efficiency of deliverables by 40\% and enhanced quality of deliverables, reducing inconsistencies by 90\%.}
+    \resumeSubheadingNoItalics
+      {Robotics Intern}{Mar. 2022 - Sep. 2022}
+      {\href{https://www.cucei.udg.mx/carreras/robotica/es/laboratorios/ciber-fisicos}{\textcolor{BlueViolet}{\textbf{\large{Intelligent Systems Laboratory}}}}}{Guadalajara, México}
+      \resumeItemListStart
+        \resumeItem{Supported the development of research on consensus algorithms for the Turtlebot robot platform and other holonomic robots using motion capture technology, optical tracking (OptiTrack), and ROS drivers on a Linux environment.}
+        \resumeItem{Extensively worked with Linux in the assembly, programming, and testing of UAV units, as well as the implementation of monocular and stereoscopic visual-inertial odometry algorithms focused on indoor flights.}
+        \resumeItem{Performed PCB and circuit design to synchronize measurements from optical and inertial sensors at the hardware level, which was required for the implementation of visual odometry.}
+      \resumeItemListEnd
+      {\textbf{Key Metrics:} Modified existing ROS/ROS2 C++ drivers in a Linux environment to synchronize visual-inertial measurements and developed new drivers to control holonomic robots and UAV kinematics}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{\Large{Projects}}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\large{Project name}} $|$ \emph{\href{https://google.com/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/}{\textcolor{BlueViolet}{\textbf{Github}}}}}{React JS, Express, MongoDB, Chakra UI, Stripe}
+          \resumeItemListStart
+            \resumeItem{Give abstract overview of what this project is about and what it does}
+            \resumeItem{Keep \textbf{highlighting} the key poitns and include numbers if you can, they help}
+            \resumeItem{Explain about major features of your project, don't write something you didn't make}
+            \resumeItem{\textbf{Features:} Search, Rest APIs, Realtime database, High performance, Responsive UI, etc. }
+          \resumeItemListEnd
+          
+    \resumeProjectHeading
+          {\textbf{\large{Project name}} $|$ \emph{\href{https://google.com/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/}{\textcolor{BlueViolet}{\textbf{Github}}}}}{React JS, Firebase, Tailwind CSS}
+          \resumeItemListStart
+            \resumeItem{Don't overflood your resume with projects, just keep the projects you are proud of and you can explain it in detail to interviewer}
+            \resumeItem{If you have a lot of projects you can try to keep the ones depending on company you are applying to (E commerce for Amazon, Video Streaming for Netflix, etc.)}
+            \resumeItem{\textbf{Features:} Search, Rest APIs, Realtime database, High performance, Responsive UI, etc. }
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+% Don't fake this section, as interviewer might screw you in it
+
+\section{\Large{Technical Skills}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Java, Python, Javascript, Typescript, HTML, CSS} \\
+     \textbf{Frameworks}{: React JS, Next JS, Node, Express JS, FastAPI, Django, Redux, Styled components, Tailwind, Chakra UI} \\
+     \textbf{Databases}{: MongoDB, MySQL, PostgresQL, Firebase firestore, DynamoDB} \\
+    }}
+ \end{itemize}
+
+
+% --------CODING PROFILES--------------
+% keep only your best coding profiles here
+% add \\ after each 3rd profile to add a new line, if you add more profiles (which you shouldn't)
+
+\section{Coding Profiles}
+\renewcommand{\arraystretch}{0}
+\begin{tabular}{p{0.33\textwidth}p{0.33\textwidth}p{0.33\textwidth}}
+  \begin{itemize}[leftmargin=*, topsep=0pt]
+    \item LeetCode - \href{https://leetcode.com/username}{\textbf{\textcolor{BlueViolet}{username}}}
+  \end{itemize} &
+  \begin{itemize}[leftmargin=*, topsep=0pt]
+    \item Github - \href{https://github.com/username}{\textbf{\textcolor{BlueViolet}{username}}}
+  \end{itemize} &
+  \begin{itemize}[leftmargin=*, topsep=0pt]
+    \item HackerRank - \href{https://www.hackerrank.com/username}{\textbf{\textcolor{BlueViolet}{username}}}
+  \end{itemize} \\
+\end{tabular}
+
+
+% -----------ACHIEVEMENTS/OPEN-SOURCE/RESEARCH-----------
+% Keep achievements as per the company you are applying to
+% If you have achievements in competitive programming, add it, it is useful when applying to product based companies
+% You should give more priority to hackathons' and open source's achievements when applying for startups or abroad companies
+
+\section{Achievements}
+\resumeItemListStart
+    \resumeItem{Keep your relevant achievements only}
+    \resumeItem{Don't write about the art competitions you won in school or what was your rank in board exams, no one cares about that}
+    \resumeItem{Add \href{https://google.com/}{\textcolor{BlueViolet}{\textbf{link}}} to your achievements if you have, as a source of proof}
+    \resumeItem{\textbf{Highlight} the key points you want the other person to notice}
+    \resumeItem{Don't write that you were CR of your class in achievements, remember you are applying for a software engineering role}
+\resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
