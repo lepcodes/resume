@@ -29,7 +29,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-.7in}
+\addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -38,9 +38,20 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-\titleformat{\section}{
-  \vspace{-4pt}\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titleformat{\section}[display] % ← here!
+  {\raggedright\large}        % format
+  {}                          % label
+  {0pt}                       % sep
+  {%
+    \vspace{-22pt}             % gap
+    \titlerule                % top rule
+    \vspace{1pt}              % gap
+  }
+  [
+    \vspace{-1pt}              % gap
+    \titlerule                % bottom rule
+    \vspace{-4pt}              % gap
+  ]       
 
 % \pdfglyphtounicode=1
 
@@ -61,7 +72,7 @@
     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-8pt}
+    \end{tabular*}\vspace{-4pt}
 }
 
 \newcommand{\resumeSubheadingNoItalics}[4]{
@@ -119,7 +130,7 @@
         C.P 45200
     \end{tabular}
 \end{tabularx}
-\vspace{-12pt}
+\vspace{-14pt}
 \begin{center}
     \href{https://lepcodes.vercel.app/}{\textcolor{BlueViolet}{\faGlobe\enspace \textbf{lepcodes.vercel.app}}} $|$  
     \href{https://www.linkedin.com/in/luispreciado/}{\textcolor{BlueViolet}{\faLinkedin\enspace \textbf{linkedin.com/in/luispreciado}}} $|$
@@ -135,46 +146,30 @@
 %     \href{https://github.com/lepcodes}{\textcolor{BlueViolet}{\faGithub\enspace \textbf{Github}}} $|$
 %     \small {\faMobile\enspace \textbf{+52 3317933872}}
 % \end{center}
-\vspace{-12pt}
+\vspace{-15pt}
 
 %------------PROFILE------------
 \rule{\textwidth}{0.1pt}
 
-\vspace{2pt}
-I'm a passionate and motivated individual with a strong interest in programming, automation, and robotics. Nearing the completion of my Robotics Engineering degree, I am seeking a graduate position to further enhance my knowledge and make meaningful contributions to the industry. With over a year of experience as an intern in the automotive industry, I am committed to continuous learning and professional growth.
-\vspace{-8pt}
-
-%-----------EDUCATION-----------
-% Write only your two highest formal educational qualifications
-\section{\Large{Education}}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Guadalajara}{Guadalajara, México}
-      {Master's Degree in Machine Learning and AI -- \textbf{CGPA: 9.5}}{January 2025 -- Currently}
-    \resumeSubheading
-      {University of Guadalajara}{Guadalajara, México}
-      {Robotics Engineering -- \textbf{CGPA: 9.8}}{January 2020 -- June 2024}
-    \resumeSubheading
-      {CETI (Technical and Industrial Teaching Center)}{Guadalajara, México}
-      {Automatic Control Technologist -- \textbf{Percentage: 88\%}}{July 2017 -- April 2019}
-  \resumeSubHeadingListEnd
-\vspace{-11pt}
+\vspace{1pt}
+Analytical software developer with a strong background in machine learning and full-stack development. I dedicate my time to creating innovative solutions that solve complex problems and produce high-quality products.
+\vspace{-5pt}
 
 %-----------EXPERIENCE-----------
 \section{\Large{Experience}}
   \resumeSubHeadingListStart
     \resumeSubheadingNoItalics
-      {Software Engineer Intern}{August 2023 -- July 2024}
+      {\large Software Engineer Intern}{August 2023 -- July 2024}
       {\href{https://bosch.com.mx}{\textcolor{BlueViolet}{\textbf{\large{Robert Bosch México}}}}}{Guadalajara, México (Hybrid)}
       \resumeItemListStart
-        \resumeItem{Designed and implemented a Python and Rasa framework-based Chatbot to facilitate new developer induction and provide troubleshooting assistance, complete with a local SQL database for response management, a ChatGPT-based model API for enhanced query handling, and Github for version control.}
+        \resumeItem{Designed and implemented a Python and Rasa framework-based Chatbot to facilitate new developer onboarding and provide troubleshooting assistance, complete with a local SQL database for response management, a ChatGPT-based model API for enhanced query handling, and Github for version control.}
         \resumeItem{Automating report generation for fault-mapping between customer defined fault application and ECU's  real monitors using Python scripts, leveraging Pandas, Anaconda, and fuzzy logic libraries, to ensure accurate tracking of monitor-fault mappings and to guarantee software quality deliverables.}
         \resumeItem{Developed scripts to cross-reference client requirements with ECU header files, identifying potential inconsistencies and streamlining the verification process.}
         \resumeItemNoBullet{\textbf{Key Metrics:} Enhanced quality of deliverables and improved efficiency by 40\%, reducing inconsistencies by 90\%.}
       \resumeItemListEnd
     \vspace{-2pt}
     \resumeSubheadingNoItalics
-      {Robotics Intern}{Jun. 2022 - Aug. 2023}
+      {\large Robotics Intern}{Jun. 2022 - Aug. 2023}
       {\href{https://www.cucei.udg.mx/carreras/robotica/es/laboratorios/ciber-fisicos}{\textcolor{BlueViolet}{\textbf{\large{Intelligent Systems Laboratory}}}}}{Guadalajara, México}
       \resumeItemListStart
         \resumeItem{Supported the development of research on consensus algorithms for the Turtlebot robot platform and other holonomic robots using motion capture technology, optical tracking (OptiTrack), and ROS drivers on a Linux environment.}
@@ -183,39 +178,62 @@ I'm a passionate and motivated individual with a strong interest in programming,
         \resumeItemNoBullet{\textbf{Key Metrics:} Modified existing ROS/ROS2 C++ drivers in a Linux environment to synchronize visual-inertial measurements and developed new drivers to control holonomic robots and UAV kinematics}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
+\vspace{-12pt}
 
-\vspace{-18pt}
+%-----------EDUCATION-----------
+% Write only your two highest formal educational qualifications
+\section{\Large{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Guadalajara}{Guadalajara, México}
+      {Master's Degree in Machine Learning and Artificial Intelligence}{January 2025 -- Currently}
+      \resumeItemListStart
+        \resumeItem{Developing an EW-ACF-based forgetting mechanism for LSTM networks to optimize long-term memory retention in time-series forecasting systems through bio-inspired memory reset.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Guadalajara}{Guadalajara, México}
+      {Bachelor's Degree in Robotics Engineering}{January 2020 -- June 2024}
+      \resumeItemListStart
+        \resumeItem{Bachelor's degree providing hands-on training in developing machine learning algorithms and robotic vision systems (Python, Matlab), designing and programming the underlying electronic circuits and embedded system (C/C++ and VHDL).}
+      \resumeItemListEnd
+    \resumeSubheading
+      {CETI (Technical and Industrial Teaching Center)}{Guadalajara, México}
+      {Automatic Control Technologist}{July 2017 -- April 2019}
+      \resumeItemListStart
+        \resumeItem{Degree providing extensive training in control theory, industrial instrumentation, and power electronics, with practical experience programming PLCs and embedded systems for automation tasks.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
 %-----------PROJECTS-----------
 \section{\Large{Projects}}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{\large{Chat React Component}} $|$ \emph{\href{https://google.com/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/}{\textcolor{BlueViolet}{\textbf{Github}}}}}{React JS, Express, MongoDB, Chakra UI, Stripe}
-          \resumeItemListStart
-            \resumeItem{Give abstract overview of what this project is about and what it does}
-            \resumeItem{Keep \textbf{highlighting} the key poitns and include numbers if you can, they help}
-            \resumeItem{Explain about major features of your project, don't write something you didn't make}
-            \resumeItem{\textbf{Features:} Search, Rest APIs, Realtime database, High performance, Responsive UI, etc. }
-          \resumeItemListEnd
-          
-    \resumeProjectHeading
-          {\textbf{\large{Omni-Driver}} $|$ \emph{\href{https://google.com/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/}{\textcolor{BlueViolet}{\textbf{Github}}}}}{React JS, Firebase, Tailwind CSS}
-          \resumeItemListStart
-            \resumeItem{Don't overflood your resume with projects, just keep the projects you are proud of and you can explain it in detail to interviewer}
-            \resumeItem{If you have a lot of projects you can try to keep the ones depending on company you are applying to (E commerce for Amazon, Video Streaming for Netflix, etc.)}
-            \resumeItem{\textbf{Features:} Search, Rest APIs, Realtime database, High performance, Responsive UI, etc. }
-          \resumeItemListEnd
-          
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{\large{Chat React Component}} $|$ \emph{\href{https://lep-chat-demo.vercel.app/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/lepcodes/lep-chat}{\textcolor{BlueViolet}{\textbf{Github}}}}}{React, Next.js, Express, Tailwind CSS}
+\resumeItemListStart
+\resumeItem{Engineered a modular React chat component, serving as the core user interface for a Fitness AI Assistant web application built with Next.js.}
+\resumeItem{Leveraged Tailwind CSS and CSS Modules to create a fully responsive, customizable, and visually appealing chat interface.}
+\resumeItem{Integrated the component with a back-end Express API to handle conversational logic and data exchange.}
+\resumeItem{\textbf{Key Skills:} Component-Based Architecture, State Management, API Integration, Responsive UI/UX.}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{\large{Omni-Control Driver}} $|$ \emph{\href{https://www.youtube.com/watch?v=NT2HuSaO69o/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/lepcodes/omni_control/}{\textcolor{BlueViolet}{\textbf{Github}}}}}{Python, OpenCV, ROS, C++, CMake, Bash}
+\resumeItemListStart
+\resumeItem{Developed a real-time C++ ROS driver for the robot's kinematics, achieving precise and responsive motion control.}
+\resumeItem{Created and deployed Python-based neural control algorithms, enabling the robot to autonomously follow complex, pre-defined trajectories with high fidelity.}
+\resumeItem{Integrated advanced capabilities including SLAM for real-time environment mapping and motion planning for obstacle avoidance.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
-% Don't fake this section, as interviewer might screw you in it
-
+\vspace{-14pt}
 \section{\Large{Technical Skills}}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Javascript, Typescript, HTML, CSS, C/C++} \\
-     \textbf{Frameworks}{: Tensorflow, Pandas, React JS, Next JS, Node, Express JS, FastAPI, Styled components, Tailwind} \\
-     \textbf{Databases}{: SQLite, PostgresQL, Supabase} \\
+     \textbf{Programming Languages}{: Python, Javascript, Typescript, HTML, CSS, C/C++} \\
+     \textbf{Technologies}{: Tensorflow, Pandas, React JS, Next JS, Node, Express JS, FastAPI, Tailwind, SQLite, PostgresQL, Supabase}  \\
+     \textbf{Tools}{: Git, GitHub, Visual Studio Code} \\
     }}
  \end{itemize}
 
