@@ -152,7 +152,7 @@
 \rule{\textwidth}{0.1pt}
 
 \vspace{1pt}
-{Analytical software developer with a strong background in machine learning and full-stack development. I dedicate my time to creating innovative solutions that solve complex problems and produce high-quality products.}
+{Analytical software developer with a strong background in machine learning, data science and full-stack development. I am dedicated to solving complex problems and am pursuing opportunities to contribute my skills to a team focused on creating high-quality, innovative products.}
 \vspace{-5pt}
 
 %-----------EXPERIENCE-----------
@@ -174,7 +174,8 @@
       \resumeItemListStart
         \resumeItem{Supported the development of research on consensus algorithms for the Turtlebot robot platform and other holonomic robots using motion capture technology, optical tracking (OptiTrack), and ROS drivers on a Linux environment.}
         \resumeItem{Extensively worked with Linux in the assembly, programming, and testing of UAV units, as well as the implementation of monocular and stereoscopic visual-inertial odometry algorithms focused on indoor flights.}
-        \resumeItem{Performed PCB and circuit design to synchronize measurements from optical and inertial sensors at the hardware level, which was required for the implementation of visual odometry.}
+        % \resumeItem{Engaged in 3D modeling using Fusion 360 to create specialized components for the camera-IMU mount and the TurtleBot LiDAR.}
+        % \resumeItem{Performed PCB and circuit design to synchronize measurements from optical and inertial sensors at the hardware level, which was required for the implementation of visual odometry.}
         \resumeItemNoBullet{\textbf{Key Metrics:} Modified existing ROS/ROS2 C++ drivers in a Linux environment to synchronize visual-inertial measurements and developed new drivers to control holonomic robots and UAV kinematics}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -203,39 +204,56 @@
     %     \resumeItem{Degree providing extensive training in control theory, industrial instrumentation, and power electronics, with practical experience programming PLCs and embedded systems for automation tasks.}
     %   \resumeItemListEnd
   \resumeSubHeadingListEnd
-\vspace{-16pt}
+\vspace{-12pt}
 
 
 %-----------PROJECTS-----------
 \section{\Large{Projects}}
 \resumeSubHeadingListStart
 \resumeProjectHeading
+{\textbf{\large{Avocado Ripening Prediction API}} $|$ \emph{\href{https://avocado-ripening-ui.vercel.app/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/lepcodes/avocado-ripening.git}{\textcolor{BlueViolet}{\textbf{Github}}}} $|$ \emph{\href{http://220.158.72.163:8080/docs}{\textcolor{BlueViolet}{\textbf{API}}}}}
+{TensorFlow, FastAPI, Docker, React, MLflow, OCI}
+\resumeItemListStart
+\resumeItem{Architected and developed an end-to-end application to predict the shelf life of avocados in days, leveraging a multi-input deep learning model that analyzes both an image and storage condition data.}
+\resumeItem{Implemented a computer vision model using TensorFlow, employing transfer learning with a CNN base fine-tuned on a custom dataset of avocado images to extract ripeness features.}
+\resumeItem{Containerized the Keras model and a serving API using Docker and FastAPI, and managed the model lifecycle and experiment tracking with MLflow on Oracle Cloud Infrastructure (OCI).}
+\resumeItemListEnd
+\resumeProjectHeading
 {\textbf{\large{Chat React Component}} $|$ \emph{\href{https://lep-chat-demo.vercel.app/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/lepcodes/lep-chat}{\textcolor{BlueViolet}{\textbf{Github}}}}}{React, Next.js, Express, Tailwind CSS}
 \resumeItemListStart
 \resumeItem{Engineered a modular React chat component, serving as the core user interface for a Fitness AI Assistant web application built with Next.js.}
 \resumeItem{Leveraged Tailwind CSS and CSS Modules to create a fully responsive, customizable, and visually appealing chat interface.}
 \resumeItem{Integrated the component with a back-end Express API to handle conversational logic and data exchange.}
-\resumeItem{\textbf{Key Skills:} Component-Based Architecture, State Management, API Integration, Responsive UI/UX.}
+% \resumeItem{\textbf{Key Skills:} Component-Based Architecture, State Management, API Integration, Responsive UI/UX.}
 \resumeItemListEnd
-\resumeProjectHeading
-{\textbf{\large{Omni-Control Driver}} $|$ \emph{\href{https://www.youtube.com/watch?v=NT2HuSaO69o/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/lepcodes/omni_control/}{\textcolor{BlueViolet}{\textbf{Github}}}}}{Python, OpenCV, ROS, C++, CMake, Bash}
-\resumeItemListStart
-\resumeItem{Developed a real-time C++ ROS driver for the robot's kinematics, achieving precise and responsive motion control.}
-\resumeItem{Created and deployed Python-based neural control algorithms, enabling the robot to autonomously follow complex, pre-defined trajectories with high fidelity.}
-\resumeItem{Integrated advanced capabilities including SLAM for real-time environment mapping and motion planning for obstacle avoidance.}
-\resumeItemListEnd
+% \resumeProjectHeading
+% {\textbf{\large{Omni-Control Driver}} $|$ \emph{\href{https://www.youtube.com/watch?v=NT2HuSaO69o/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/lepcodes/omni_control/}{\textcolor{BlueViolet}{\textbf{Github}}}}}{Python, OpenCV, ROS, C++, CMake, Bash}
+% \resumeItemListStart
+% \resumeItem{Developed a real-time C++ ROS driver for the robot's kinematics, achieving precise and responsive motion control.}
+% \resumeItem{Created and deployed Python-based neural control algorithms, enabling the robot to autonomously follow complex, pre-defined trajectories with high fidelity.}
+% \resumeItem{Integrated advanced capabilities including SLAM for real-time environment mapping and motion planning for obstacle avoidance.}
+% \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
-\vspace{-14pt}
+\vspace{-10pt}
 \section{\Large{Technical Skills}}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Programming Languages}{: Python, Javascript, Typescript, HTML, CSS, C/C++} \\
-     \textbf{Technologies}{: Tensorflow, Pandas, React JS, Next JS, Node, Express JS, FastAPI, Tailwind, SQLite, PostgresQL, Supabase}  \\
-     \textbf{Tools}{: Git, GitHub, Visual Studio Code} \\
+     \textbf{Technologies}{: Tensorflow, PyTorch, Sckit-learn, Docker, Oracle Cloud, AWS, FastAPI, Pandas, React JS, Next JS, Node, Express JS,, Tailwind, SQLite, PostgresQL, Supabase, Excel, PowerBI}  \\
+    %  \textbf{Tools}{: Git, GitHub, Visual Studio Code} \\
+     \textbf{Tools}{: Git, GitHub, Visual Studio Code, Fusion 360} \\
     }}
  \end{itemize}
+
+\vspace{-12pt}
+\section{Certifications}
+  \resumeItemListStart
+    % Example for a Foundations Certification
+    \resumeItem{\textbf{Oracle Cloud Infrastructure 2025 AI Foundations Associate (1Z0-1122-25)} $|$ \emph{Issued: Aug 2025} $|$ \emph{\href{https://catalog-education.oracle.com/ords/certview/sharebadge?id=82DB04BF7EB36ECBDCA3D64DA0C3B78B4FB0EE3FA8CCDFA68535B8FD8F7AC230}{\textcolor{BlueViolet}{\textbf{Verify}}}}}
+  \resumeItemListEnd
+
 
 
 % --------CODING PROFILES--------------
