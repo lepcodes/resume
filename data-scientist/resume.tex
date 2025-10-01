@@ -7,6 +7,9 @@
 
 \documentclass[a4paper,11pt]{article}
 
+% Import config file
+\input{../resume_config.tex}
+
 % --------------- PACKAGES -----------------------
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -132,9 +135,9 @@
 \end{tabularx}
 \vspace{-14pt}
 \begin{center}
-    \href{https://lepcodes.vercel.app/}{\textcolor{BlueViolet}{\faGlobe\enspace \textbf{lepcodes.vercel.app}}} $|$  
-    \href{https://www.linkedin.com/in/luispreciado/}{\textcolor{BlueViolet}{\faLinkedin\enspace \textbf{linkedin.com/in/luispreciado}}} $|$
-    \href{https://github.com/lepcodes}{\textcolor{BlueViolet}{\faGithub\enspace \textbf{github.com/lepcodes}}}
+    \href{\MyGithubProfile}{\textcolor{BlueViolet}{\faGlobe\enspace \textbf{\MyGithubProfileShort}}} $|$
+    \href{\MyLinkedInProfile}{\textcolor{BlueViolet}{\faLinkedin\enspace \textbf{\MyLinkedInProfileShort}}} $|$
+    \href{\MyPortfolioSite}{\textcolor{BlueViolet}{\faGlobe\enspace \textbf{\MyPortfolioSiteShort}}}
 \end{center}
 
 % \vspace{10pt}
@@ -211,7 +214,7 @@
 \section{\Large{Projects}}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{\large{Avocado Ripening Prediction API}} $|$ \emph{\href{https://avocado-ripening-ui.vercel.app/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/lepcodes/avocado-ripening.git}{\textcolor{BlueViolet}{\textbf{Github}}}} $|$ \emph{\href{http://220.158.72.163:8080/docs}{\textcolor{BlueViolet}{\textbf{API}}}}}
+{\textbf{\large{\AvocadoTitle}} $|$ \emph{\href{\AvocadoLiveURL}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{\AvocadoGithubURL}{\textcolor{BlueViolet}{\textbf{Github}}}} $|$ \emph{\href{\AvocadoAPIURL}{\textcolor{BlueViolet}{\textbf{API}}}}}
 {TensorFlow, FastAPI, Docker, React, MLflow, OCI}
 \resumeItemListStart
 \resumeItem{Architected and developed an end-to-end application to predict the shelf life of avocados in days, leveraging a multi-input deep learning model that analyzes both an image and storage condition data.}
@@ -219,7 +222,8 @@
 \resumeItem{Containerized the Keras model and a serving API using Docker and FastAPI, and managed the model lifecycle and experiment tracking with MLflow on Oracle Cloud Infrastructure (OCI).}
 \resumeItemListEnd
 \resumeProjectHeading
-{\textbf{\large{Chat React Component}} $|$ \emph{\href{https://lep-chat-demo.vercel.app/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/lepcodes/lep-chat}{\textcolor{BlueViolet}{\textbf{Github}}}}}{React, Next.js, Express, Tailwind CSS}
+{\textbf{\large{\ChatTitle}} $|$ \emph{\href{\ChatLiveURL}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{\ChatGithubURL}{\textcolor{BlueViolet}{\textbf{Github}}}}}
+{React, Next.js, Express, Tailwind CSS}
 \resumeItemListStart
 \resumeItem{Engineered a modular React chat component, serving as the core user interface for a Fitness AI Assistant web application built with Next.js.}
 \resumeItem{Leveraged Tailwind CSS and CSS Modules to create a fully responsive, customizable, and visually appealing chat interface.}
@@ -227,7 +231,8 @@
 % \resumeItem{\textbf{Key Skills:} Component-Based Architecture, State Management, API Integration, Responsive UI/UX.}
 \resumeItemListEnd
 % \resumeProjectHeading
-% {\textbf{\large{Omni-Control Driver}} $|$ \emph{\href{https://www.youtube.com/watch?v=NT2HuSaO69o/}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{https://github.com/lepcodes/omni_control/}{\textcolor{BlueViolet}{\textbf{Github}}}}}{Python, OpenCV, ROS, C++, CMake, Bash}
+% {\textbf{\large{\OmniTitle}} $|$ \emph{\href{\OmniLiveURL}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{\OmniGithubURL}{\textcolor{BlueViolet}{\textbf{Github}}}}}
+% {Python, OpenCV, ROS, C++, CMake, Bash}
 % \resumeItemListStart
 % \resumeItem{Developed a real-time C++ ROS driver for the robot's kinematics, achieving precise and responsive motion control.}
 % \resumeItem{Created and deployed Python-based neural control algorithms, enabling the robot to autonomously follow complex, pre-defined trajectories with high fidelity.}
@@ -236,7 +241,7 @@
 \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
-\vspace{-10pt}
+\vspace{-10pt}-
 \section{\Large{Technical Skills}}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
@@ -247,6 +252,7 @@
     }}
  \end{itemize}
 
+ %-----------CERTIFICATIONS-----------
 \vspace{-12pt}
 \section{Certifications}
   \resumeItemListStart
