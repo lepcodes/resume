@@ -27,7 +27,7 @@
 \usepackage[sfdefault]{universalis}
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
-
+\linespread{0.90}
 % ---------- RESUME FORMAT ADJUSTMENTS -------------
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
@@ -60,13 +60,13 @@
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-0pt}}
   }
 }
 
 \newcommand{\resumeItemNoBullet}[1]{
   \item[]\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-1pt}}
   }
 }
 
@@ -97,7 +97,7 @@
     \item
     \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -179,7 +179,7 @@
         \resumeItem{Extensively worked with Linux in the assembly, programming, and testing of UAV units, as well as the implementation of monocular and stereoscopic visual-inertial odometry algorithms focused on indoor flights.}
         % \resumeItem{Engaged in 3D modeling using Fusion 360 to create specialized components for the camera-IMU mount and the TurtleBot LiDAR.}
         % \resumeItem{Performed PCB and circuit design to synchronize measurements from optical and inertial sensors at the hardware level, which was required for the implementation of visual odometry.}
-        \resumeItemNoBullet{\textbf{Key Metrics:} Modified existing ROS/ROS2 C++ drivers in a Linux environment to synchronize visual-inertial measurements and developed new drivers to control holonomic robots and UAV kinematics}
+        \resumeItemNoBullet{\textbf{Key Metrics:} Optimized \textbf{hardware-software integration} by modifying \textbf{C++} drivers to synchronize visual-inertial sensors and control UAV kinematics.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-12pt}
@@ -192,7 +192,7 @@
       {University of Guadalajara}{Guadalajara, México}
       {Master's Degree in Machine Learning and Artificial Intelligence}{January 2025 -- Currently}
       \resumeItemListStart
-        \resumeItem{Developing an EW-ACF-based forgetting mechanism for LSTM networks to optimize long-term memory retention in time-series forecasting systems through bio-inspired memory reset.}
+        \resumeItem{Implementing and optimizing custom LSTM architectures for time-series forecasting using PyTorch and Python. Focus on improving computational efficiency and long-term dependency retention.}
       \resumeItemListEnd
     \resumeSubheading
       {University of Guadalajara}{Guadalajara, México}
@@ -215,19 +215,20 @@
 \resumeSubHeadingListStart
 \resumeProjectHeading
 {\textbf{\large{\AvocadoTitle}} $|$ \emph{\href{\AvocadoLiveURL}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{\AvocadoGithubURL}{\textcolor{BlueViolet}{\textbf{Github}}}} $|$ \emph{\href{\AvocadoAPIURL}{\textcolor{BlueViolet}{\textbf{API}}}}}
-{TensorFlow, FastAPI, Docker, React, MLflow, OCI}
+{Python, FastAPI, Docker, GitHub Actions, Prefect, OCI}
 \resumeItemListStart
-\resumeItem{Architected and developed an end-to-end application to predict the shelf life of avocados in days, leveraging a multi-input deep learning model that analyzes both an image and storage condition data.}
-\resumeItem{Implemented a computer vision model using TensorFlow, employing transfer learning with a CNN base fine-tuned on a custom dataset of avocado images to extract ripeness features.}
-\resumeItem{Containerized the Keras model and a serving API using Docker and FastAPI, and managed the model lifecycle and experiment tracking with MLflow on Oracle Cloud Infrastructure (OCI).}
+\vspace{2pt}
+\resumeItem{Engineered a self-healing MLOps pipeline that automates the model lifecycle for shelf-life prediction, utilizing GitHub Actions for CI/CD to build and deploy Docker containers upon code changes.}
+\resumeItem{Implemented a Hybrid Cloud architecture, orchestrating training jobs on Kaggle GPUs while centralizing artifact tracking on a custom MLflow server deployed on OCI.}
+\resumeItem{Developed a REST API with FastAPI that supports hot-reloading of models, automatically promoting superior models based on live metric evaluation.}
 \resumeItemListEnd
 \resumeProjectHeading
 {\textbf{\large{\ChatTitle}} $|$ \emph{\href{\ChatLiveURL}{\textcolor{BlueViolet}{\textbf{Live}}}} $|$ \emph{\href{\ChatGithubURL}{\textcolor{BlueViolet}{\textbf{Github}}}}}
 {React, Next.js, Express, Tailwind CSS}
 \resumeItemListStart
-\resumeItem{Engineered a modular React chat component, serving as the core user interface for a Fitness AI Assistant web application built with Next.js.}
-\resumeItem{Leveraged Tailwind CSS and CSS Modules to create a fully responsive, customizable, and visually appealing chat interface.}
-\resumeItem{Integrated the component with a back-end Express API to handle conversational logic and data exchange.}
+\resumeItem{Architected a distributable component library (lep-chat) using Rollup to bundle optimized ESM/CommonJS builds with full TypeScript definitions.}
+\resumeItem{Developed a production-ready Full-Stack demo using Next.js 15, implementing secure server-side API routes to orchestrate communication between the frontend and Gemini LLM.}
+\resumeItem{Engineered a zero leakage styling system combining Tailwind CSS and CSS Modules to ensure isolation.}
 % \resumeItem{\textbf{Key Skills:} Component-Based Architecture, State Management, API Integration, Responsive UI/UX.}
 \resumeItemListEnd
 % \resumeProjectHeading
@@ -241,14 +242,14 @@
 \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
-\vspace{-10pt}-
+\vspace{-10pt}
 \section{\Large{Technical Skills}}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Python, Javascript, Typescript, HTML, CSS, C/C++} \\
-     \textbf{Technologies}{: Tensorflow, PyTorch, Sckit-learn, Docker, Oracle Cloud, AWS, FastAPI, Pandas, React JS, Next JS, Node, Express JS,, Tailwind, SQLite, PostgresQL, Supabase, Excel, PowerBI}  \\
+     \textbf{Programming Languages: }{Python, C/C++, Javascript, Typescript, HTML, CSS} \\
+     \textbf{Technologies: }{Docker, CI/CD, Linux, Tensorflow, PyTorch, Sckit-learn, Oracle Cloud, Prefect, FastAPI, Pandas, React JS, Next JS, Node, Express JS, Tailwind, SQLite, PostgresQL, Supabase, Excel, PowerBI}  \\
     %  \textbf{Tools}{: Git, GitHub, Visual Studio Code} \\
-     \textbf{Tools}{: Git, GitHub, Visual Studio Code, Fusion 360} \\
+     \textbf{Tools: }{Git, GitHub, Visual Studio Code} \\
     }}
  \end{itemize}
 
